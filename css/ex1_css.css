@@ -1,0 +1,24 @@
+div
+{
+	overflow :auto;
+	margin-top : 10dp;
+}
+H1
+{
+	text-decoration : underline;
+}
+p
+{
+	font-family : "Times New Roman";
+	font-size : 20px;
+}
+footer
+{
+	background-color : #2D8017 ;
+	color : #FFFFFF;
+	padding : 15px;
+}
+a
+{
+	color : #FFFFFF;
+}

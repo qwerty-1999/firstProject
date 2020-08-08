@@ -1,0 +1,14 @@
+#list1
+{
+	margin-left : 10px;
+	font-size : 20px;
+}
+H1
+{
+	text-decoration : underline;
+}
+body
+{
+	background-image : url("../images/bg1.png");
+	background-repeat :repeat;
+}

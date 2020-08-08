@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="js/signup_js.js"></script>
+		<link rel ="stylesheet" href="css/signup_css.css">
+	</head>
+	<body>
+		<div class="navbar navbar-inverse">
+			<div class= "container-fluid">
+				<div class= "navbar navbar-header">
+					<button type ="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>							
+					</button>
+					<a class= "navbar-brand" href="ex1.html">Itz CRICKET</a>
+				</div>
+				<div class="collapse navbar-collapse" id ="myNavbar">
+					<ul class ="nav navbar-nav">
+						<li><a href="ex1.html">HOME</a></li>
+						<li><a href="Page1.html">STATISTICS</a></li>
+						<li><a href="Page2.html">CRICKET FACTS</a></li>
+					</ul>
+					<ul class ="nav navbar-nav navbar-right">
+						<li class="active"><a href="Signup.html"><span class ="glyphicon glyphicon-user">Sign up</a></li>
+						<li><a href="Login.html"><span class ="glyphicon glyphicon-log-in">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class ="first">
+			<h2>Sign up Page</h2>
+			<form>
+			<table>
+			<tr>
+			<td><label for ="fname">First Name : </label></td>
+			<td><input type ="text" class="form-control" id ="fname" name ="fname" onblur = "valfname();"></td><td><span id ="sfname"></span></td>
+			</tr><tr>
+			<td><label for ="lname">Last Name : </label></td>
+			<td><input type ="text" class="form-control" id ="lname" name ="lname" placeholder = "Optional"></td>
+			</tr><tr>
+			<td><label for = "age"> Age : </label></td>
+			<td><input type = "number" class="form-control" id ="age" name ="age" min = "1"></td>
+			</tr><tr>
+			<td><label for = "phone">Phone Number : </label></td>
+			<td><input type = "text" class="form-control" id ="phone" name ="phone" placeholder ="987-654-3210" oninput = "valphone();"></td><td><span id ="sphone"></span></td>
+			</tr><tr>
+			<td>Gender :</td> 
+			<td><label><input type = "radio" class="form-control" value ="male" name ="gender">Male</label>
+			<label><input type = "radio" class="form-control" value ="female" name ="gender">Female</label></td>
+			</tr><tr>
+			<td><label for = "blood">Blood Group : </label></td>
+			<td><select id ="blood" name = "blood">
+				<option>O+ve</option>
+				<option>O-ve</option>
+				<option>A+ve</option>
+				<option>B+ve</option>
+				<option>A-ve</option>
+				<option>B-ve</option>
+			</select></td>
+			</tr><tr>
+			<td><label for ="pass1">New Password : </label></td>
+			<td><input type ="password" class="form-control" id ="pass1" name ="pass1" oninput ="valpass1();"></td><td><span id ="spass1"></span></td>
+			</tr><tr>
+			<td><label for ="pass2">Confirm Password : </label></td>
+			<td><input type ="password" class="form-control" id ="pass2" name ="pass2" oninput="valpass2();"></td><td><span id ="spass2"></span></td>
+			</tr><tr>
+			<td colspan = "2"><label><input type = "checkbox" class="form-control" value ="pp" id ="pp" name ="pp">I agree to the privacy policy &amp terms and condition</label></td>
+			</tr><tr>
+			<td colspan = "2"><span id ="sfinish"></span></td>
+			</tr>
+			</table>
+			<button type="button" class="form-control" id  ="button" onclick = "valfinish();">Finish</button>
+			</form>
+		</div>
+		</div>
+	</body>
+</html>

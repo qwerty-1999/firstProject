@@ -1,0 +1,28 @@
+
+body
+{
+	background-image : url("../images/login_bg.jpg");
+	background-size : cover;
+	color : #FFFFFF;
+}
+h2
+{
+	text-decoration : underline;
+}
+.form-control
+{
+	background-color :transparent;
+	font-weight : bold;
+	border : none;
+	border-bottom : 1px solid #FFFFFF;	
+	outline : none;
+	color : #FFFFFF;
+}
+@media	only screen and (max-width : 550px)
+{
+	body
+{
+	background-image : url("../images/login_bg_small.jpg");
+	background-size : cover;
+}
+}
